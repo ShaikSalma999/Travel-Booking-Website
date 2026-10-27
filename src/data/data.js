@@ -1,0 +1,78 @@
+export const formatINR = (n) => '₹' + Number(n).toLocaleString('en-IN')
+
+export const packages = [
+  {
+    id: 1, name: 'Kerala Backwaters Escape', destination: 'Kerala', country: 'India', type: 'Beach',
+    days: 5, price: 28500, rating: 4.7, image: '/images/kerala.jpg',
+    summary: 'Houseboat nights, spice trails and quiet Alleppey canals.',
+    highlights: ['Overnight houseboat in Alleppey', 'Munnar tea estate walk', 'Kathakali performance in Kochi'],
+    itinerary: ['Arrive in Kochi, Fort Kochi heritage walk', 'Drive to Munnar, tea plantation visit', 'Periyar wildlife boat ride', 'Alleppey houseboat check-in and cruise', 'Breakfast, transfer to Kochi airport'],
+    inclusions: ['4 nights stay', 'Daily breakfast', 'Houseboat dinner', 'AC cab transfers'],
+    exclusions: ['Flights', 'Lunch', 'Entry tickets', 'Personal expenses'],
+  },
+  {
+    id: 2, name: 'Royal Rajasthan Circuit', destination: 'Jaipur & Udaipur', country: 'India', type: 'Heritage',
+    days: 6, price: 32000, rating: 4.6, image: '/images/rajasthan.jpg',
+    summary: 'Forts, palaces and lake views across the Pink and White cities.',
+    highlights: ['Amber Fort sunrise visit', 'City Palace, Udaipur', 'Sunset boat ride on Lake Pichola'],
+    itinerary: ['Arrive Jaipur, Hawa Mahal and bazaars', 'Amber Fort and Jaigarh', 'Drive to Udaipur via Chittorgarh', 'City Palace and Saheliyon ki Bari', 'Lake Pichola boat ride', 'Departure from Udaipur'],
+    inclusions: ['5 nights in 4-star hotels', 'Breakfast and dinner', 'Private cab', 'Guide at forts'],
+    exclusions: ['Flights', 'Monument tickets', 'Camera fees', 'Tips'],
+  },
+  {
+    id: 3, name: 'Leh Ladakh Road Trip', destination: 'Leh', country: 'India', type: 'Adventure',
+    days: 7, price: 41000, rating: 4.9, image: '/images/ladakh.jpg',
+    summary: 'High passes, Pangong Lake and monastery sunrises.',
+    highlights: ['Khardung La crossing', 'Night by Pangong Lake', 'Hemis Monastery visit'],
+    itinerary: ['Arrive Leh, rest and acclimatise', 'Local monasteries: Thiksey, Shey', 'Nubra Valley via Khardung La', 'Hunder sand dunes and camel ride', 'Drive to Pangong Lake', 'Return to Leh', 'Departure'],
+    inclusions: ['6 nights hotel and camps', 'All meals in camps', 'Inner line permits', 'Oxygen cylinder on vehicle'],
+    exclusions: ['Flights to Leh', 'Travel insurance', 'Hotel lunches', 'Adventure activities'],
+  },
+  {
+    id: 4, name: 'Goa Beach Break', destination: 'Goa', country: 'India', type: 'Beach',
+    days: 4, price: 25000, rating: 4.4, image: '/images/goa.jpg',
+    summary: 'Sunny beaches, Portuguese lanes and easy evenings.',
+    highlights: ['North Goa beach hopping', 'Old Goa churches', 'Sunset cruise on the Mandovi'],
+    itinerary: ['Arrive, check in, Calangute beach', 'North Goa: Baga, Anjuna, Vagator', 'Old Goa and Fontainhas walk', 'Breakfast and departure'],
+    inclusions: ['3 nights resort stay', 'Breakfast', 'Airport transfers', 'Sunset cruise'],
+    exclusions: ['Flights', 'Lunch and dinner', 'Water sports', 'Alcohol'],
+  },
+  {
+    id: 5, name: 'Bali Island Retreat', destination: 'Bali', country: 'Indonesia', type: 'Beach',
+    days: 6, price: 68000, rating: 4.8, image: '/images/bali.webp',
+    summary: 'Rice terraces, temples and cliffside beaches.',
+    highlights: ['Tegallalang rice terraces', 'Uluwatu temple sunset', 'Nusa Penida day trip'],
+    itinerary: ['Arrive Denpasar, Seminyak stay', 'Ubud: monkey forest and terraces', 'Water temple and coffee plantation', 'Nusa Penida day trip', 'Uluwatu temple and Kecak dance', 'Departure'],
+    inclusions: ['5 nights villa stay', 'Daily breakfast', 'Private car', 'Nusa Penida ferry'],
+    exclusions: ['International flights', 'Visa on arrival', 'Lunch and dinner', 'Spa'],
+  },
+  {
+    id: 6, name: 'Dubai City Lights', destination: 'Dubai', country: 'UAE', type: 'City',
+    days: 5, price: 72000, rating: 4.5, image: '/images/dubai.jpg',
+    summary: 'Skyline views, desert dunes and big-city shopping.',
+    highlights: ['Burj Khalifa observation deck', 'Desert safari with BBQ dinner', 'Dhow cruise at Marina'],
+    itinerary: ['Arrive, Dubai Mall and fountain show', 'Burj Khalifa and Dubai Frame', 'Desert safari with dinner', 'Abu Dhabi city tour', 'Shopping and departure'],
+    inclusions: ['4 nights 4-star hotel', 'Breakfast', 'Visa assistance', 'Airport transfers'],
+    exclusions: ['Flights', 'Visa fee', 'Lunch', 'Tips'],
+  },
+  {
+    id: 7, name: 'Swiss Alps Classic', destination: 'Switzerland', country: 'Switzerland', type: 'Adventure',
+    days: 8, price: 165000, rating: 4.9, image: '/images/swiss.webp',
+    summary: 'Cable cars, glacier trains and lakeside towns.',
+    highlights: ['Jungfraujoch, Top of Europe', 'Glacier Express scenic ride', 'Lucerne old town and lake'],
+    itinerary: ['Arrive Zurich, transfer to Lucerne', 'Mt. Titlis cable car', 'Interlaken and Grindelwald', 'Jungfraujoch excursion', 'Zermatt via scenic train', 'Matterhorn viewpoint', 'Zurich city tour', 'Departure'],
+    inclusions: ['7 nights hotels', 'Breakfast', 'Swiss Travel Pass', 'Airport transfers'],
+    exclusions: ['Flights', 'Schengen visa', 'Lunch and dinner', 'Insurance'],
+  },
+  {
+    id: 8, name: 'Paris & Amsterdam Duo', destination: 'Paris', country: 'France', type: 'City',
+    days: 9, price: 152000, rating: 4.7, image: '/images/paris.jpg',
+    summary: 'Museums, canals and café mornings in two classic cities.',
+    highlights: ['Eiffel Tower summit', 'Louvre guided tour', 'Amsterdam canal cruise'],
+    itinerary: ['Arrive Paris, Seine walk', 'Eiffel Tower and Montmartre', 'Louvre and Versailles', 'Train to Amsterdam', 'Canal cruise and Jordaan', 'Keukenhof or Zaanse Schans', 'Free day', 'Rijksmuseum', 'Departure'],
+    inclusions: ['8 nights hotels', 'Breakfast', 'Paris-Amsterdam train', 'Museum entries'],
+    exclusions: ['Flights', 'Schengen visa', 'Lunch and dinner', 'Local transit'],
+  },
+]
+
+export const destinationTypes = ['All', 'Beach', 'Heritage', 'Adventure', 'City']
